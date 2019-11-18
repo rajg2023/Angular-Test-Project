@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Angular Project Demo</title>
+<script src="lib/angular.js"></script>
+<script src="angularDemo.js"></script>
+</head>
+<body>
+<div ng-app="demoApp" ng-controller="demoCtrl">
+<h1 style="text-align:center">Welcome to My First Angular Page</h1>
+<form >
+<fieldset>
+
+<legend style="text-align:center;background-color:red">Please Type your info here:</legend>
+<p style="text-align:center">{{message1}}</p>
+Title      : <select type="text" ng-model="title">
+             <option value="Mr.">Mr.</option>
+             <option value="Mrs.">Mrs.</option>
+             <option value="Miss.">Miss.</option>
+             </select>
+First Name : <input type="text"       ng-model="firstname"  placeholder="Enter First name here">
+Last Name  : <input type="text"       ng-model="lastname"   placeholder="Enter Last name here">
+Email      : <input type="email"      ng-model="email"      placeholder="Enter your email here">
+Phone      : <input type="number"      ng-model="phone"      placeholder="Enter your phone here">
+Country    : <input type="text"   ng-model="country"     placeholder="Enter your Country here">
+</fieldset>
+<!-- <h1>Hello&nbsp;{{title}}&nbsp;{{firstname}}&nbsp;&nbsp;{{lastname}}</h1> -->
+<h1>{{message2}}&nbsp;{{title}}&nbsp;{{firstname}}&nbsp;&nbsp;{{lastname}}&nbsp;&nbsp;{{message3}}</h1>
+<h2>Your email address is {{email}}</h2>
+<h2>Your Telephone number is {{phone}}</h2>
+<h2>And you are from {{country}}</h2>
+
+</form>
+</div>
+
+</body>
+</html>
